@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="zestaw_zakupow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sklep">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nazwa" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="produkty">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="produkt" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nazwa" type="xs:string"/>
+                    <xs:element name="ilosc">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:decimal">
+                            <xs:attribute name="jednostka" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cena_jednostkowa" type="xs:decimal"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                  <xs:attribute name="kategoria" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="data" type="xs:date" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+{
+  "zestaw_zakupow": {
+    "title": {
+      "nazwa": "Lista zakupow"
+    },
+    "produkty": [
+      {
+        "kategoria": "Nabiał",
+        "nazwa": "Mleko",
+        "ilosc": 2,
+        "jednostka": "szt",
+        "cena": 3.89
+      },
+      {
+        "kategoria": "Pieczywo",
+        "nazwa": "Chleb",
+        "ilosc": 1,
+        "jednostka": "szt",
+        "cena": 6.5
+      },
+      {
+        "kategoria": "Warzywa",
+        "nazwa": "Pomidorki",
+        "ilosc": 0.8,
+        "jednostka": "kg",
+        "cena": 12.99
+      },
+      {
+        "kategoria": "Nie chleb",
+        "nazwa": "Makaron",
+        "ilosc": 3,
+        "jednostka": "szt",
+        "cena": 4.2
+      },
+      {
+        "kategoria": "Inne",
+        "nazwa": "mieszanka studencka orzechow",
+        "ilosc": 1,
+        "jednostka": "szt",
+        "cena": 8.9
+      }
+    ]
+  }
+}

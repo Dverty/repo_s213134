@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zestaw_zakupow
-  data="2026-11-24"
-  waluta="PLN"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="schemat.xsd">
-  <sklep>
-    <nazwa>Lista zakupow</nazwa>
-    
-  </sklep>
-  <produkty>
-    <produkt id="1" kategoria="Nabiał">
-      <nazwa>Mleko świeze</nazwa>
-      <ilosc jednostka="szt">2</ilosc>
-      <cena_jednostkowa>3.89</cena_jednostkowa>
-    </produkt>
-    <produkt id="2" kategoria="Pieczywo">
-      <nazwa>Chleb</nazwa>
-      <ilosc jednostka="szt">1</ilosc>
-      <cena_jednostkowa>6.50</cena_jednostkowa>
-    </produkt>
-    <produkt id="3" kategoria="Warzywa">
-      <nazwa>Pomidorki</nazwa>
-      <ilosc jednostka="kg">0.8</ilosc>
-      <cena_jednostkowa>12.99</cena_jednostkowa>
-    </produkt>
-    <produkt id="4" kategoria="Artykuły suche">
-      <nazwa>Makaron</nazwa>
-      <ilosc jednostka="szt">3</ilosc>
-      <cena_jednostkowa>4.20</cena_jednostkowa>
-    </produkt>
-    <produkt id="5" kategoria="Chemia gospodarcza">
-      <nazwa>mieszanka studencka orzechow</nazwa>
-      <ilosc jednostka="szt">1</ilosc>
-      <cena_jednostkowa>8.90</cena_jednostkowa>
-    </produkt>
-  </produkty>
-</zestaw_zakupow>
+<zestaw_zakupow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="struktura.xsd">
+<title>
+<nazwa>Lista zakupow</nazwa>
+</title>
+<produkty>
+<produkt kategoria="Nabiał">
+<nazwa>Mleko</nazwa>
+<ilosc jednostka="szt">2</ilosc>
+<cena>3.89</cena>
+</produkt>
+<produkt kategoria="Pieczywo">
+<nazwa>Chleb</nazwa>
+<ilosc jednostka="szt">1</ilosc>
+<cena>6.50</cena>
+</produkt>
+<produkt kategoria="Warzywa">
+<nazwa>Pomidorki</nazwa>
+<ilosc jednostka="kg">0.8</ilosc>
+<cena>12.99</cena>
+</produkt>
+<produkt kategoria="Nie chleb">
+<nazwa>Makaron</nazwa>
+<ilosc jednostka="szt">3</ilosc>
+<cena>4.20</cena>
+</produkt>
+<produkt kategoria="Inne">
+<nazwa>mieszanka studencka orzechow</nazwa>
+<ilosc jednostka="szt">1</ilosc>
+<cena>8.90</cena>
+</produkt>
+</produkty>
+</zestaw_zakupow> 
